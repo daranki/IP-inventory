@@ -1,0 +1,1 @@
+print('main file for IP inventory')
