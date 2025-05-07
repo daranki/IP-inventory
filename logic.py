@@ -165,6 +165,7 @@ class Logic(QMainWindow, Ui_MainWindow):
                 self.feedback_label.setText("IP range successfully calculated.")
             else:
                 self.IP_range_output.setText(f"{self.IP_RANGE[0]} - {self.IP_RANGE[-1]}")
+                self.feedback_label.setStyleSheet("color: red;")
                 self.available_hosts_label.setText("Available hosts: 0")
                 self.feedback_label.setText("No usable hosts: subnet too small")
                 self.IP_RANGE = []
