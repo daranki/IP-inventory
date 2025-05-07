@@ -156,7 +156,7 @@ class Logic(QMainWindow, Ui_MainWindow):
             self.NETWORK_ID = str(network.network_address)
             self.BROADCAST_ADDRESS = str(network.broadcast_address)
 
-            host_count = len(self.IP_RANGE)
+            host_count = len(self.IP_RANGE) - 2
 
             if host_count > 2:
                 self.IP_range_output.setText(f"{self.IP_RANGE[0]} - {self.IP_RANGE[-1]}")
